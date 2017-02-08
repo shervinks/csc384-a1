@@ -1,0 +1,11 @@
+1. If a box is in a corner and that corner is not the correct storage space,
+	then there is a deadlock. 
+
+2. If two adjacent boxes are both along the wall, and both are not in the
+	correct storage space, then there is a deadlock.
+3. If two adjacent boxes are surrounded by at least two obstacles, and the
+	boxes are not in the correct storage space, then there is a deadlock.
+4. When two adjacent boxes are in the optimal path of each other, more movement
+	is required and there should be a penalty when calculating the heuristic.
+5. There should be a penalty for calculating the heuristic for each box that 
+	cannot reach any appropriate storage space, without moving other boxes first
